@@ -1,6 +1,6 @@
 # HTB: Fluffy
 
-**OS:** Windows /// **Difficulty:** Easy
+**OS:** Windows --- **Difficulty:** Easy
 
 ---
 
