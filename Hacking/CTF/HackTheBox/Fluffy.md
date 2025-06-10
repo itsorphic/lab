@@ -1,7 +1,6 @@
 # HTB: Fluffy
 
-**OS:** Windows
-**Difficulty:** Easy
+**OS:** Windows /// **Difficulty:** Easy
 
 ---
 
@@ -67,13 +66,14 @@ Nmap done: 1 IP address (1 host up) scanned in 98.96 seconds
 ```
 Most of these are related to Windows Domain Controller.
 The domain is `fluffy.htb` and the hostname is `DC01`, so I add these to my `/etc/hosts` file:
+
 `10.10.11.69    DC01.fluffy.htb fluffy.htb  DC01`
 
 Other interesting ports are SMB on port `445`, WinRM on port `5985` and WS-Management on `9389`.
 
 ## Initial Credentials
 
-I'm given credentials for a low priv user (`j.fleischman / J0elTHEM4n1990!`) at the start of the box. So I decided to try them out on both SMB and WinRM.
+I'm given credentials for a low priv user (`j.fleischman / J0elTHEM4n1990!`) at the start of the box, so I decided to try them out on both SMB and WinRM.
 
 ```bash
 ➜  netexec smb dc01.fluffy.htb
